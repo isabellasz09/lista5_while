@@ -6,8 +6,11 @@ print("Isabella Carolina de Souza")
 numero1= float(input("Digite um numero: "))
 numero2= float(input("Digite outro numero: "))
 soma = numero1 + numero2
-print(input("A soma dessses numeros é de {}:".format(soma)))
-resposta = print("a soma dos numeros foi: ")
+print("A soma dessses numeros é de ",soma)
+resposta = print("Você deseja adicionar outro numero: ")
 while resposta == "s":
-    print("Você deseja adicionar outro numero: ")
+    numero= float(input("Digite outro numero: "))
+    soma += numero
+    resposta= input("você que adicionar mais um numero? ")
+print("A soma destes numeros e de ", soma)
     
